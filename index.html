@@ -3,48 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moje linki</title>
+  <title>SS CAR RENT - Linki</title>
+  <!-- Ikony Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background: #f0f0f0;
-      text-align: center;
-      padding: 50px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("cropped-sscar_logo_trans.png") no-repeat center center/cover;
     }
-    .container {
-      max-width: 400px;
-      margin: auto;
-      background: white;
-      padding: 30px;
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
       border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      color: white;
     }
+
     h1 {
       margin-bottom: 20px;
+      font-size: 2rem;
     }
-    .link {
-      display: block;
-      margin: 10px 0;
-      padding: 12px;
+
+    .icons a {
+      margin: 10px;
+      font-size: 2rem;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .icons a:hover {
+      color: #ff4081; /* Instagram różowy odcień */
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
       background: #0073e6;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       transition: background 0.3s;
     }
-    .link:hover {
+
+    .btn:hover {
       background: #005bb5;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Twoje Imię</h1>
-    <p>Witaj! Tu znajdziesz moje linki 👇</p>
-    <a href="https://facebook.com/twojprofil" class="link">Facebook</a>
-    <a href="https://instagram.com/twojprofil" class="link">Instagram</a>
-    <a href="https://tiktok.com/@twojprofil" class="link">TikTok</a>
-    <a href="https://youtube.com/twojprofil" class="link">YouTube</a>
+  <div class="overlay">
+    <h1>SS CAR RENT</h1>
+    <p>Znajdź nas w social media 👇</p>
+    <div class="icons">
+      <a href="https://www.facebook.com/profile.php?id=61575337950981" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/ss_car_rent/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@ss_car_rent?_t=ZN-8w6vnCNohok&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <a href="https://www.sscarrent.pl/" class="btn" target="_blank">Strona główna</a>
   </div>
 </body>
 </html>
