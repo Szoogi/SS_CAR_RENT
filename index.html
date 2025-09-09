@@ -7,23 +7,38 @@
   <!-- Ikony Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
+    body, html {
       margin: 0;
       padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
-      height: 100vh;
-/*       display: flex;
-      justify-content: center;
-      align-items: center;
-      background: url("cropped-sscar_logo_trans.png") no-repeat center center/cover; */
+      overflow: hidden;
     }
 
+    /* Wideo w tle */
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Overlay z napisami */
     .overlay {
       background: rgba(0, 0, 0, 0.6);
       padding: 40px;
       border-radius: 15px;
       text-align: center;
       color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 400px;
+      width: 90%;
     }
 
     h1 {
@@ -60,12 +75,13 @@
   </style>
 </head>
 <body>
-    <!-- Wideo w tle -->
-  <video autoplay muted loop class="background-video">
+  <!-- Wideo w tle -->
+  <video autoplay muted loop playsinline class="background-video">
     <source src="SS_CAR_RENT_VIDEO.mp4" type="video/mp4">
     Twoja przeglądarka nie obsługuje wideo w tle.
   </video>
 
+  <!-- Overlay z treścią -->
   <div class="overlay">
     <h1>SS CAR RENT</h1>
     <p>Znajdź nas w social media 👇</p>
